@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: rgb(163, 237, 211);
+  width: 100%;
+  min-height: 100vh;
+  color: #292828;
+}
+
+.password-game__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.password-game__title {
+  font-size: 36px;
+}
+
+.password-game__input-container {
+  margin-top: 50px;
+  position: relative;
+}
+
+.password-game__input-wrapper {
+  height: 51px;
+}
+
+.password-game__input {
+  display: block;
+  border: none;
+  box-shadow: none;
+  border-radius: 14px;
+  width: 450px;
+  min-height: 51px;
+  height: 100%;
+  overflow: hidden;
+  font-size: 26px;
+  padding: 10px;
+  resize: none;
+  color: #292828 !important;
+}
+.password-game__input:focus {
+  outline: none;
+}
+
+.password-game__words-counter {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translate(100%, -50%);
+  font-size: 26px;
+}
+
+.password-game__rules-container {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.password-game__rule {
+  background-color: white;
+  padding: 30px;
+  border-radius: 14px;
+  font-size: 22px;
+  position: relative;
+  transition: all 0.4s;
+}
+.password-game__rule.false {
+  background-color: red;
+}
+.password-game__rule.true {
+  background-color: green;
+  color: rgb(240, 241, 242);
+}
+
+.password-game__rule__icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.password-game__end-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 18, 16, 0.726);
+}
+.password-game__end-wrapper._hidden {
+  visibility: hidden;
+}
+
+.password-game__end-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 50px;
+  background-color: beige;
+  border-radius: 20px;
+}
+
+.password-game__h2 {
+  font-size: 40px;
+}
+
+.password-game__timer {
+  text-align: center;
+  font-size: 35px;
+}
+
+.password-game__retry-button {
+  width: max-content;
+  align-self: center;
+  font-size: 26px;
+  padding: 17px 40px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(255, 56, 86);
+  letter-spacing: 1.5px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
+}
+.password-game__retry-button:hover {
+  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+}
+.password-game__retry-button:active {
+  background-color: rgb(255, 56, 86);
+  /*50, 168, 80*/
+  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+}/*# sourceMappingURL=main.css.map */
